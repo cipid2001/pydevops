@@ -1,0 +1,34 @@
+>>> dic={}
+>>> dic['a']='One'
+>>> dic['b']='Two'
+>>> dic['c']='3'
+>>> dic
+{'a': 'One', 'c': '3', 'b': 'Two'}
+>>> for i,j in dic.items():
+...     print(i,j)
+... 
+('a', 'One')
+('c', '3')
+('b', 'Two')
+>>> dic.items()
+[('a', 'One'), ('c', '3'), ('b', 'Two')]
+>>> for i,j in dic:
+...     print(i,j)
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: need more than 1 value to unpack
+>>> for i in dic:
+...     print(i)
+... 
+a
+c
+b
+>>> host={}
+>>> host['1']='12.12.12.10'
+>>> host['2']='192.168.10.1'
+>>> host['3']='168.251.21.1'
+>>> host
+{'1': '12.12.12.10', '3': '168.251.21.1', '2': '192.168.10.1'}
+>>> 
+
