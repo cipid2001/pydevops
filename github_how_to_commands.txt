@@ -1,0 +1,270 @@
+[cdima@centos Desktop]$ ls
+dictionary_in_python.txt  loop_function.py  python_session1
+error_handling.py         loop_none.py
+invoke_command.py         loop.py
+[cdima@centos Desktop]$ python error_handling.py 
+Ops! no file
+[cdima@centos Desktop]$ python error_handling.py 
+Ops! no file
+[cdima@centos Desktop]$ python error_handling.py 
+Ops! no file
+3
+[cdima@centos Desktop]$ ls
+dictionary_in_python.txt  loop_function.py  python_session1
+error_handling.py         loop_none.py
+invoke_command.py         loop.py
+[cdima@centos Desktop]$ 
+[cdima@centos Desktop]$ 
+[cdima@centos Desktop]$ git
+bash: git: command not found...
+[cdima@centos Desktop]$ 
+[cdima@centos Desktop]$ 
+[cdima@centos Desktop]$ yum install git
+Loaded plugins: fastestmirror, langpacks
+You need to be root to perform this command.
+[cdima@centos Desktop]$ sudo yum install git
+[sudo] password for cdima: 
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirrors.pidginhost.com
+ * extras: mirrors.pidginhost.com
+ * updates: mirrors.pidginhost.com
+Resolving Dependencies
+--> Running transaction check
+---> Package git.x86_64 0:1.8.3.1-6.el7_2.1 will be installed
+--> Processing Dependency: perl-Git = 1.8.3.1-6.el7_2.1 for package: git-1.8.3.1-6.el7_2.1.x86_64
+--> Processing Dependency: perl(Term::ReadKey) for package: git-1.8.3.1-6.el7_2.1.x86_64
+--> Processing Dependency: perl(Git) for package: git-1.8.3.1-6.el7_2.1.x86_64
+--> Processing Dependency: perl(Error) for package: git-1.8.3.1-6.el7_2.1.x86_64
+--> Running transaction check
+---> Package perl-Error.noarch 1:0.17020-2.el7 will be installed
+---> Package perl-Git.noarch 0:1.8.3.1-6.el7_2.1 will be installed
+---> Package perl-TermReadKey.x86_64 0:2.30-20.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+==========================================================================
+ Package               Arch        Version                Repository
+                                                                     Size
+==========================================================================
+Installing:
+ git                   x86_64      1.8.3.1-6.el7_2.1      base      4.4 M
+Installing for dependencies:
+ perl-Error            noarch      1:0.17020-2.el7        base       32 k
+ perl-Git              noarch      1.8.3.1-6.el7_2.1      base       53 k
+ perl-TermReadKey      x86_64      2.30-20.el7            base       31 k
+
+Transaction Summary
+==========================================================================
+Install  1 Package (+3 Dependent packages)
+
+Total download size: 4.5 M
+Installed size: 22 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/4): perl-TermReadKey-2.30-20.el7.x86_64.rpm       |  31 kB   00:00     
+(2/4): perl-Git-1.8.3.1-6.el7_2.1.noarch.rpm         |  53 kB   00:00     
+(3/4): perl-Error-0.17020-2.el7.noarch.rpm           |  32 kB   00:06     
+(4/4): git-1.8.3.1-6.el7_2.1.x86_64.rpm              | 4.4 MB   00:06     
+--------------------------------------------------------------------------
+Total                                        663 kB/s | 4.5 MB  00:06     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 1:perl-Error-0.17020-2.el7.noarch                      1/4 
+  Installing : perl-TermReadKey-2.30-20.el7.x86_64                    2/4 
+  Installing : git-1.8.3.1-6.el7_2.1.x86_64                           3/4 
+  Installing : perl-Git-1.8.3.1-6.el7_2.1.noarch                      4/4 
+  Verifying  : perl-Git-1.8.3.1-6.el7_2.1.noarch                      1/4 
+  Verifying  : perl-TermReadKey-2.30-20.el7.x86_64                    2/4 
+  Verifying  : 1:perl-Error-0.17020-2.el7.noarch                      3/4 
+  Verifying  : git-1.8.3.1-6.el7_2.1.x86_64                           4/4 
+
+Installed:
+  git.x86_64 0:1.8.3.1-6.el7_2.1                                          
+
+Dependency Installed:
+  perl-Error.noarch 1:0.17020-2.el7                                       
+  perl-Git.noarch 0:1.8.3.1-6.el7_2.1                                     
+  perl-TermReadKey.x86_64 0:2.30-20.el7                                   
+
+Complete!
+[cdima@centos Desktop]$ ssh
+ssh          ssh-agent    sshd         ssh-keygen   
+ssh-add      ssh-copy-id  sshd-keygen  ssh-keyscan  
+[cdima@centos Desktop]$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/cdima/.ssh/id_rsa): 
+Created directory '/home/cdima/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/cdima/.ssh/id_rsa.
+Your public key has been saved in /home/cdima/.ssh/id_rsa.pub.
+The key fingerprint is:
+8c:3f:3d:79:33:ad:6b:f0:eb:77:d3:ac:b0:2b:58:9c cdima@centos.home
+The key's randomart image is:
++--[ RSA 2048]----+
+|                 |
+|                 |
+|                 |
+|       o         |
+|      . S. .     |
+|       . .E. .   |
+|        oo+o= ...|
+|        ...oo*..+|
+|           +B=.o.|
++-----------------+
+[cdima@centos Desktop]$ cd /home/cdima/.ssh/
+[cdima@centos .ssh]$ ls
+id_rsa  id_rsa.pub
+[cdima@centos .ssh]$ cat id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOqoyWXycQ1DcK4Ghq8jnfiDutrmPVmC1s8BXAG//fh8tG20fNPRvpoONlIC24QDsOCZPb+WBczB0Ma+2I3f3QTy7q/29q+iGwuwuxR9lavDjBLXM4hiFxDLDz4BsI5dO9idEZ+11IYWj+MS+jnx0tWVN3bQtqFiDNrXOB7kZKW91s/WQBE4NdfFxFKF6WwFHREsG0D1DOL5oP/Wl48zofoHRTyBmlKt9nfIW9sUNFdWHwGLFKbIYbt27E457IEMFjcH/PYZDpErhepOFGmX+Jzt0E2h8c2+xovcAHUKFicANc55pv0xqHklbsgzpvlYFhhZqmXCGCAGB2gRtcprBj cdima@centos.home
+[cdima@centos .ssh]$ cd ..
+[cdima@centos ~]$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+[cdima@centos ~]$ cd  Desktop/
+[cdima@centos Desktop]$ ls
+dictionary_in_python.txt  loop_function.py  python_session1
+error_handling.py         loop_none.py
+invoke_command.py         loop.py
+[cdima@centos Desktop]$ git clone git@github.com:cipid2001/pydevops.git
+Cloning into 'pydevops'...
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+remote: Counting objects: 16, done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 16 (delta 0), reused 13 (delta 0), pack-reused 0
+Receiving objects: 100% (16/16), done.
+[cdima@centos Desktop]$ ls
+dictionary_in_python.txt  loop_function.py  pydevops
+error_handling.py         loop_none.py      python_session1
+invoke_command.py         loop.py
+[cdima@centos Desktop]$ cp *.py pydevops/
+ansible/ bash/    .git/    python/  
+[cdima@centos Desktop]$ cd pydevops/
+[cdima@centos pydevops]$ ls
+ansible  bash  python
+[cdima@centos pydevops]$ mkdir _my_python_files
+[cdima@centos pydevops]$ ls -il
+total 0
+103216322 drwxrwxr-x. 2 cdima cdima 29 May 11 23:10 ansible
+  1107914 drwxrwxr-x. 2 cdima cdima 43 May 11 23:10 bash
+ 67772437 drwxrwxr-x. 2 cdima cdima  6 May 11 23:13 _my_python_files
+ 34337900 drwxrwxr-x. 2 cdima cdima 95 May 11 23:10 python
+[cdima@centos pydevops]$ cd ..
+[cdima@centos Desktop]$ cp *.py py
+pydevops/        python_session1  
+[cdima@centos Desktop]$ cp *.py pydevops/_my_python_files/
+[cdima@centos Desktop]$ ls
+dictionary_in_python.txt  loop_function.py  pydevops
+error_handling.py         loop_none.py      python_session1
+invoke_command.py         loop.py
+[cdima@centos Desktop]$ cp python_session1 pydevops/_my_python_files/
+[cdima@centos Desktop]$ cp dictionary_in_python.txt  pydevops/_my_python_files/
+[cdima@centos Desktop]$ git branch 
+fatal: Not a git repository (or any of the parent directories): .git
+[cdima@centos Desktop]$ git branch 
+fatal: Not a git repository (or any of the parent directories): .git
+[cdima@centos Desktop]$ git clone git@github.com:cipid2001/pydevops.git
+fatal: destination path 'pydevops' already exists and is not an empty directory.
+[cdima@centos Desktop]$ cd pydevops/
+[cdima@centos pydevops]$ git branch
+* master
+[cdima@centos pydevops]$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+[cdima@centos pydevops]$ git log
+commit 17ed80175cd60379c4b9675ff632d692ca24b8fc
+Author: cipid2001 <cipid2001@yahoo.com>
+Date:   Thu May 11 23:07:31 2017 +0300
+
+    Adding files from a python training
+
+commit 9a5056e889b7039318a8d130dd3990086e51c185
+Author: cipid2001 <cipid2001@yahoo.com>
+Date:   Thu May 11 22:44:25 2017 +0300
+
+    Initial commit
+[cdima@centos pydevops]$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	_my_python_files/
+nothing added to commit but untracked files present (use "git add" to track)
+[cdima@centos pydevops]$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+[cdima@centos pydevops]$ git add 
+ansible/          .git/             python/           
+bash/             _my_python_files/ 
+[cdima@centos pydevops]$ git add _my_python_files/
+[cdima@centos pydevops]$ git commit -m "Add my python training files"
+[master d614f63] Add my python training files
+ Committer: Ciprian Dima <cdima@centos.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 491 insertions(+)
+ create mode 100644 _my_python_files/dictionary_in_python.txt
+ create mode 100644 _my_python_files/error_handling.py
+ create mode 100644 _my_python_files/invoke_command.py
+ create mode 100644 _my_python_files/loop.py
+ create mode 100644 _my_python_files/loop_function.py
+ create mode 100644 _my_python_files/loop_none.py
+ create mode 100644 _my_python_files/python_session1
+[cdima@centos pydevops]$ git log
+commit d614f63ad9e592199a6913ef07dd31df27c00a82
+Author: Ciprian Dima <cdima@centos.home>
+Date:   Thu May 11 23:18:52 2017 +0300
+
+    Add my python training files
+
+commit 17ed80175cd60379c4b9675ff632d692ca24b8fc
+Author: cipid2001 <cipid2001@yahoo.com>
+Date:   Thu May 11 23:07:31 2017 +0300
+
+    Adding files from a python training
+
+commit 9a5056e889b7039318a8d130dd3990086e51c185
+Author: cipid2001 <cipid2001@yahoo.com>
+Date:   Thu May 11 22:44:25 2017 +0300
+
+    Initial commit
+[cdima@centos pydevops]$ git push origin
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 86.89 KiB | 0 bytes/s, done.
+Total 10 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To git@github.com:cipid2001/pydevops.git
+   17ed801..d614f63  master -> master
+[cdima@centos pydevops]$ 
